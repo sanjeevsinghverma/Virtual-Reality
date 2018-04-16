@@ -1,23 +1,4 @@
-# The Hall VR
-
-
-![hallvr1](/screenshots/thehall1.jpg)
-
-
-The Hall is a demo created in [Cecropia Solutions](http://www.cecropiasolutions.com/) to test the WebVR capabilities.
-
-The project has a variety of art items in display. Some custom, some of free access and use.
-
-This project is a revamp of our original Hall project [(https://github.com/Cecropia/thehallvr)](https://github.com/Cecropia/thehallvr) which is in its entirety a THREE.js project, we decided to migrate it to A-Frame to test its convenience against a stand-alone THREE.js app for VR and the results are superior. The most important part is that there's a default behavior such as controls across VR devices and compatibility that makes it easy to work with it.
-
-# Navigation
-
-In this version, the main navigation is hand controls (Vive wands and Oculus Touch) to fire a teleporting ray to target where you want to be at.
-
-For desktop the traditional gaming controls are available (WASD, arrow keys and mouse).
-
-For mobile platforms (GearVR and Cardboard) Teleport Spots with a Gaze cursor are the way to jump to the several targets placed in the hall.
-
+# Retail_Store
 
 
 
@@ -82,12 +63,3 @@ Overall the migration was very transparent thanks to the previous THREE.js knowl
 # Paintings from
 
 - [wikipedia.org](https://www.wikipedia.org/)
-
-# More images
-
-![hallvr2](/screenshots/thehall2.jpg)
-![hallvr3](/screenshots/thehall3.jpg)
-![hallvr4](/screenshots/thehall4.jpg)
-![hallvr5](/screenshots/thehall5.jpg)
-
-[Live Demo](https://cecropia.github.io/thehallaframe/)
