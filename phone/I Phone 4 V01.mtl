@@ -1,0 +1,28 @@
+newmtl Chrome
+Ka 0 0 0
+Kd 0.705882 0.705882 0.705882
+Ks 1 1 1
+Ni 1
+Ns 100
+Tf 1 1 1
+d 1
+
+newmtl Middle
+Ka 0 0 0
+Kd 0.117647 0.117647 0.117647
+Ks 0.2 0.2 0.2
+Ni 1
+Ns 400
+Tf 1 1 1
+d 1
+
+newmtl Texture_
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0.2 0.2 0.2
+Ni 1
+Ns 400
+Tf 1 1 1
+d 1
+map_Kd SB_Front 020000.jpg
+
