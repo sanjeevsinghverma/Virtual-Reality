@@ -2,40 +2,6 @@
 
 
 
-# Development process
-
-The object modeling and texture baking was created in Blender, where the 1m unit is used as base size; the models are exported individually, converted to CTM and loaded into the application via Three.js.
-
-A couple of the models were created with Oculus Medium and later decimated with Meshlab.
-
-A couple of [Kinetic Sculptures](https://en.wikipedia.org/wiki/Kinetic_art) were created directly with Three.js and a bit of Math knowledge.
-
-We created a motorcycle model with [Photogrammetry](https://en.wikipedia.org/wiki/Photogrammetry).
-
-Captured human movement to create four animations that occupy one side of a hallway.
-
-
-# Migration process
-
-The original project is THREE.js [(https://github.com/Cecropia/thehallvr)](https://github.com/Cecropia/thehallvr); the main changes are in the way the models are loaded, now they are all located at the index.html also with the texture assets. Default model compatibility in A-Frame is .obj and recently .gltf, but we already have the .ctm format to handle large models, so this time we stick with it, but since there's no entity component for .ctm we created one.
-
-For the kinectic animations we had to create components, one for the one placed in the roof, one for the spheres, another for the fractal, and a last one for the four mocaps. The code is pretty much the same, I think this could not be accomplished without proper (or previous) THREE.js knowledge.
-
-Our teleportation process was removed and we used the A-Frame checkpoints. We had to create a mobile component to add this checkpoints for mobile only because there is no option for this in A-Frame.
-
-The compatibility in various devices is now handled by A-Frame, we previously had a fallback for mobile, but it's not enough to handle all the cases.
-
-Overall the migration was very transparent thanks to the previous THREE.js knowledge.
-
-
-
-[Live Demo](https://cecropia.github.io/thehallaframe/)
-
-
-[YouTube Video](https://www.youtube.com/watch?v=0nuiaWGNXAw)
-
-
-
 # Technologies used
 
 - [WebVR](https://webvr.info/)
